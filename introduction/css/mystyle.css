@@ -1,5 +1,8 @@
 body {
-  background-image: url("https://cdn.statically.io/img/codetheweb.blog/assets/img/posts/css-advanced-background-images/cover.jpg?f=webp&w=720");
+ background-image: url("https://cdn.statically.io/img/codetheweb.blog/assets/img/posts/css-advanced-background-images/cover.jpg?f=webp&w=720");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   
 }
 
