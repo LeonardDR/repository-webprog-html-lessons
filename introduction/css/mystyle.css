@@ -1,3 +1,10 @@
+body {
+  background-image: url("https://media.istockphoto.com/id/1406674466/photo/big-data-connection-technology-concept.jpg?s=612x612&w=0&k=20&c=OPoKST8TVjklrGs89VnPDduGvp9zwiMXnavSruKMLyI=");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-color: lightblue;
+}
 h1 {
   color: rgb(113, 0, 128);
   margin-left: 20px;
@@ -10,9 +17,5 @@ h1 {
 }
 
 body {
-  background-image: url("https://media.istockphoto.com/id/1406674466/photo/big-data-connection-technology-concept.jpg?s=612x612&w=0&k=20&c=OPoKST8TVjklrGs89VnPDduGvp9zwiMXnavSruKMLyI=");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  background-color: lightblue;
+
 }
