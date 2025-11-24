@@ -1,5 +1,5 @@
 body {
-  background-color: lightblue;
+  background-image: url("https://media.istockphoto.com/id/1406674466/photo/big-data-connection-technology-concept.jpg?s=612x612&w=0&k=20&c=OPoKST8TVjklrGs89VnPDduGvp9zwiMXnavSruKMLyI=" );
 }
 h1 {
   color: red;
@@ -10,11 +10,4 @@ h1 {
   text-align: center;
   color: rgb(160, 219, 221);
 
-}
-.IOT {
-  max-width: 90%;
-  height: auto;
-  margin: 25px auto;
-  border: 4px solid #fff; 
-  box-shadow: 0 0 15px rgba(160, 219, 221, 0.8);
 }
