@@ -35,16 +35,21 @@
          Central Ridge Academy Baliuag.Inc.
     </p>
     </div>
-    <div>3 Hobbies & Interests</div>
+    <div>3 Hobbies & Interests
+      <div class="hobby-container">
+            <img v-for="img in hobbies" :src="https://www.blogs.ppls.ed.ac.uk/wp-content/uploads/2020/05/The-Evolution-of-Online-Gaming-696x522.jpg" :key="img" alt="Hobby Icon">
+    </div>
+    </div>
     <div>4 Goals In Life
       <p>
-      My goal is to become a professional software developer and contribute
-      meaningful solutions through technology.
+      My goal is to become a professional developer and contribute
+      meaningful solutions through technology and also earning a lot of money.
     </p>
     </div>
-    <div>5 IT Experience </div>  
+    <div>5 IT Experience 
     <p>Python, Java, Javascript, Dart, MySql
     </p>
+    </div>  
     <div>6 Profile Picture </div>
     <div class="card" style="width:400px">
   <img class="card-img-top" src="https://www.w3schools.com/bootstrap5/img_avatar1.png" alt="Card image">
@@ -59,11 +64,9 @@
      </aside>
   </main>
 </div>
-<div id="app">
-  {{ message }}
-</div>
 
-<div id="app2">
+
+<div id="app">
   <div>
     <img v-for="x in Hobbies" v-bind:src="x">
   </div>

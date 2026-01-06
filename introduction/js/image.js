@@ -1,17 +1,12 @@
-const app2 = Vue.createApp({
+const app = Vue.createApp({
   data() {
     return {
       Hobbies: [
-        'https://www.w3schools.com/vue/img_burrito.svg',
-        'https://www.w3schools.com/vue/img_salad.svg',
-        'https://www.w3schools.com/vue/img_cake.svg',
-        'https://www.w3schools.com/vue/img_soup.svg',
-        'https://www.w3schools.com/vue/img_fish.svg',
-        'https://www.w3schools.com/vue/img_pizza.svg',
-        'https://www.w3schools.com/vue/img_rice.svg'
+        'https://www.blogs.ppls.ed.ac.uk/wp-content/uploads/2020/05/The-Evolution-of-Online-Gaming-696x522.jpg'
+
       ]
     };
   }
 });
 
-app2.mount("#app2");
+app2.mount("#app");
