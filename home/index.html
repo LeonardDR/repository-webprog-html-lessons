@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leonard | Personal Profile</title>
+    <title>Leonard | Personal Profile Grid</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/Style.css">
     <link rel="stylesheet" href="css/Flexboxgrid.css">
@@ -11,47 +11,50 @@
 </head>
 <body>
 
-<h1 class="text-center mt-4">ABOUT ME</h1>
+<header class="text-center py-4">
+    <h1 class="display-5 fw-bold">ABOUT ME</h1>
+</header>
 
-<div class="grid-container">
-    <div class="box about">
-        <h3>About Me</h3>
-        <p>IT student at APC.</p>
+<div class="container grid-wrapper">
+    <div class="grid-box clickable" data-info="I am an IT student at Asia Pacific College, passionate about web development.">
+        <h3>About</h3>
     </div>
-    <div class="box education">
+    <div class="grid-box clickable" data-info="Studying at APC. High School at Pasay City South High School.">
         <h3>Education</h3>
-        <p>Asia Pacific College</p>
     </div>
-    <div class="box hobbies">
+    <div class="grid-box clickable" data-info="I love playing online games, watching anime, and reading manga.">
         <h3>Hobbies</h3>
-        <p>Gaming & Anime</p>
     </div>
 
-    <div class="box skills">
+    <div class="grid-box clickable" data-info="Experienced in Python, Java, Dart, and MySQL.">
         <h3>Skills</h3>
-        <p>JS, Python, Java</p>
     </div>
-    <div class="profile-box">
-        <img src="https://www.w3schools.com/bootstrap5/img_avatar1.png" alt="Profile">
-        <h4>Leonard</h4>
-        <p>IT Student</p>
-    </div>
-    <div class="box goals">
-        <h3>Goals</h3>
-        <p>Software Engineer</p>
+    
+    <div class="profile-center-box">
+        <div class="profile-card">
+            <img src="https://www.w3schools.com/bootstrap5/img_avatar1.png" alt="Leonard's Profile">
+            <h4 id="profile-name">Leonard</h4>
+            <p id="profile-status">IT Student</p>
+        </div>
     </div>
 
-    <div class="box vue">
-        <h3>Vue.js</h3>
-        <p>Web Frameworks</p>
+    <div class="grid-box clickable" data-info="My goal is to become a Full-Stack Developer and master Mobile App Dev.">
+        <h3>Goals</h3>
     </div>
-    <div class="box resources">
+
+    <div class="grid-box clickable" data-info="Currently exploring Vue.js for modern reactive web interfaces.">
+        <h3>Vue</h3>
+    </div>
+    <div class="grid-box resource-box">
         <h3>Resources</h3>
-        <a href="https://www.w3schools.com">W3Schools</a>
+        <small>
+            <a href="https://www.w3schools.com" target="_blank">W3Schools</a><br>
+            <a href="https://github.com" target="_blank">GitHub</a>
+        </small>
     </div>
-    <div class="box empty">
+    <div class="grid-box empty-box">
         <h3>Empty</h3>
-        <p>None so far.</p>
+        <p>Stay Tuned</p>
     </div>
 </div>
 

@@ -1,39 +1,30 @@
-.grid-container {
+.grid-wrapper {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 Equal columns */
-    grid-template-rows: repeat(3, auto);   /* 3 Rows */
-    gap: 20px;
-    padding: 20px;
-    max-width: 1000px;
-    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    gap: 15px;
+    margin-top: 20px;
+    max-width: 900px;
 }
 
-/* Base style for all info boxes */
-.box {
-    background-color: #f1f1f1;
-    border: 1px solid #ddd;
-    padding: 20px;
-    text-align: center;
-    border-radius: 8px;
-    min-height: 150px;
+/* Base style for boxes */
+.grid-box, .profile-center-box {
+    border: 2px solid #333;
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-/* Center Profile Box focus */
-.profile-box {
-    background-color: #ffffff;
-    border: 2px solid #007bff;
-    padding: 15px;
+    align-items: center;
     text-align: center;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    padding: 10px;
+    transition: all 0.3s ease;
+    background: #fff;
 }
 
-/* Mobile Responsive adjustment */
+/* Ensuring margins aren't compromised on mobile */
 @media (max-width: 768px) {
-    .grid-container {
-        grid-template-columns: 1fr; /* Stacks to 1 column on phones */
+    .grid-wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        padding: 20px;
     }
 }
