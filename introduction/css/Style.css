@@ -1,31 +1,6 @@
-body {
-  background-color: #f8f9fa;
-  font-family: Arial, sans-serif;
-}
-
-.card {
-  border-radius: 12px;
-}
-
-.message-box {
-  font-size: 1.2rem;
-  padding: 15px;
-  background-color: #e3f2fd;
-  border-radius: 10px;
-}
-
-.hobby-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  justify-content: center;
-}
-
-.hobby-container img {
-  width: 70px;
-  transition: transform 0.3s;
-}
-
-.hobby-container img:hover {
-  transform: scale(1.1);
-}
+    #app {
+      display: inline-block;
+      padding: 15px;
+      font-size: x-large;
+      background-color: lightcyan;
+    }
