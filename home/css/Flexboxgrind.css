@@ -1,45 +1,37 @@
 .main-content.grid-layout {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, auto);
+  grid-template-columns: repeat(3, 220px);
+  grid-template-rows: repeat(3, 220px);
   gap: 20px;
+  justify-content: center; /* centers whole grid */
+  align-content: start;
+  padding: 30px;
 }
 
+/* ALL BOXES */
 .box {
-  background-color: #ffffff;
-  padding: 15px;
+  border: 3px solid #000;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
   text-align: center;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  font-size: 14px;
 }
 
-/* CENTER PROFILE */
+/* CENTER PROFILE BOX */
 .center-box {
-  grid-column: 2;
-  grid-row: 2;
-  border: 2px solid #000;
+  flex-direction: column;
 }
 
-/* GRID POSITIONS */
-.about     { grid-column: 1; grid-row: 1; }
-.education { grid-column: 2; grid-row: 1; }
-.hobbies   { grid-column: 3; grid-row: 1; }
+.center-box img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
 
-.skills    { grid-column: 1; grid-row: 2; }
-.goals     { grid-column: 3; grid-row: 2; }
-
-.vue       { grid-column: 1; grid-row: 3; }
-.resources { grid-column: 2; grid-row: 3; }
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .main-content.grid-layout {
-    grid-template-columns: 1fr;
-  }
-
-  .box {
-    grid-column: auto !important;
-    grid-row: auto !important;
-  }
+/* OPTIONAL: make empty visible */
+.empty {
+  background-color: #f2f2f2;
 }
