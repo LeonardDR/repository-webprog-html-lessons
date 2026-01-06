@@ -1,24 +1,39 @@
-.main-layout {
+.grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* 3 Columns */
-    grid-template-rows: auto auto;    /* 2 Rows */
+    grid-template-columns: repeat(3, 1fr); /* 3 Equal columns */
+    grid-template-rows: repeat(3, auto);   /* 3 Rows */
     gap: 20px;
     padding: 20px;
-    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
-/* Positioning the profile in the exact middle of a 3x3-style feel */
-.profile-center {
-    grid-column: 2;
-    grid-row: 1 / span 2; /* Span two rows to be the centerpiece */
+/* Base style for all info boxes */
+.box {
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-/* Responsive: Stack boxes on mobile */
+/* Center Profile Box focus */
+.profile-box {
+    background-color: #ffffff;
+    border: 2px solid #007bff;
+    padding: 15px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Mobile Responsive adjustment */
 @media (max-width: 768px) {
-    .main-layout {
-        grid-template-columns: 1fr;
-    }
-    .profile-center {
-        grid-row: 1; /* Move profile to top on mobile */
+    .grid-container {
+        grid-template-columns: 1fr; /* Stacks to 1 column on phones */
     }
 }

@@ -1,13 +1,14 @@
-.card-img-top {
-    width: 100%;
-    height: auto;
-    border-radius: 15px 15px 0 0;
+.profile-box img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Makes it circular */
+    margin-bottom: 10px;
+    object-fit: cover;
+    border: 3px solid #f1f1f1;
 }
 
-.profile-center .card {
-    transition: transform 0.3s ease;
-}
-
-.profile-center .card:hover {
-    transform: scale(1.05);
+.box:hover {
+    background-color: #e9ecef;
+    transform: translateY(-5px);
+    transition: 0.3s;
 }
