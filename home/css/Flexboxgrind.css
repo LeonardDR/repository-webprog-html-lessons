@@ -1,37 +1,24 @@
-.main-content.grid-layout {
-  display: grid;
-  grid-template-columns: repeat(3, 220px);
-  grid-template-rows: repeat(3, 220px);
-  gap: 20px;
-  justify-content: center;
-  margin-top: 40px;
+.main-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* 3 Columns */
+    grid-template-rows: auto auto;    /* 2 Rows */
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
 }
 
-/* ALL BOXES */
-.box {
-  border: 3px solid #000;
-  background-color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  text-align: center;
-  font-size: 16px;
+/* Positioning the profile in the exact middle of a 3x3-style feel */
+.profile-center {
+    grid-column: 2;
+    grid-row: 1 / span 2; /* Span two rows to be the centerpiece */
 }
 
-/* CENTER PROFILE */
-.center-box {
-  flex-direction: column;
-}
-
-.center-box img {
-  width: 110px;
-  height: 110px;
-  border-radius: 50%;
-  margin-bottom: 10px;
-}
-
-/* OPTIONAL visual clarity */
-.empty {
-  background-color: #f2f2f2;
+/* Responsive: Stack boxes on mobile */
+@media (max-width: 768px) {
+    .main-layout {
+        grid-template-columns: 1fr;
+    }
+    .profile-center {
+        grid-row: 1; /* Move profile to top on mobile */
+    }
 }

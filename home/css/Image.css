@@ -1,12 +1,13 @@
-    #app2 > div {
-      border: solid black 1px;
-      width: 80%;
-      padding: 10px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-    }
-    img {
-      width: 70px;
-      margin: 10px;
-    }
+.card-img-top {
+    width: 100%;
+    height: auto;
+    border-radius: 15px 15px 0 0;
+}
+
+.profile-center .card {
+    transition: transform 0.3s ease;
+}
+
+.profile-center .card:hover {
+    transform: scale(1.05);
+}
