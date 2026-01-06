@@ -3,9 +3,8 @@
   grid-template-columns: repeat(3, 220px);
   grid-template-rows: repeat(3, 220px);
   gap: 20px;
-  justify-content: center; /* centers whole grid */
-  align-content: start;
-  padding: 30px;
+  justify-content: center;
+  margin-top: 40px;
 }
 
 /* ALL BOXES */
@@ -17,21 +16,22 @@
   justify-content: center;
   font-weight: bold;
   text-align: center;
+  font-size: 16px;
 }
 
-/* CENTER PROFILE BOX */
+/* CENTER PROFILE */
 .center-box {
   flex-direction: column;
 }
 
 .center-box img {
-  width: 100px;
-  height: 100px;
+  width: 110px;
+  height: 110px;
   border-radius: 50%;
   margin-bottom: 10px;
 }
 
-/* OPTIONAL: make empty visible */
+/* OPTIONAL visual clarity */
 .empty {
   background-color: #f2f2f2;
 }
